@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joyce — créateur, réalisateur et slameur. Découvrez son univers, ses projets, ses contenus et ses réseaux.">
+  <title>JOYCE — Site officiel</title>
+  <style>
+    :root{--bg:#050505;--card:#101010;--text:#f5f5f5;--muted:#a8a8a8;--line:#242424;--accent:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1180px;margin:auto;padding:0 24px}
+    header{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(5,5,5,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:900;letter-spacing:.18em;font-size:19px}
+    .navlinks{display:flex;gap:24px;font-size:13px;color:#cfcfcf}
+    .navlinks a:hover{color:#fff}
+    .hero{min-height:100vh;display:grid;place-items:center;padding:120px 0 70px;background:radial-gradient(circle at 75% 30%,#222 0,transparent 30%),linear-gradient(145deg,#050505,#0b0b0b)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:.25em;color:#aaa;font-size:12px;margin-bottom:18px}
+    h1{font-size:clamp(58px,10vw,130px);line-height:.85;letter-spacing:-.07em}
+    .hero p{max-width:600px;color:#bdbdbd;font-size:18px;margin:28px 0}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 20px;border:1px solid #444;border-radius:999px;font-size:14px;font-weight:700;transition:.2s}
+    .btn.primary{background:#fff;color:#000;border-color:#fff}
+    .btn:hover{transform:translateY(-2px)}
+    .portrait{height:560px;border:1px solid #292929;border-radius:28px;background:linear-gradient(145deg,#191919,#070707);display:flex;align-items:end;justify-content:center;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.5)}
+    .portrait-inner{width:82%;height:88%;border-radius:180px 180px 0 0;background:radial-gradient(circle at 50% 30%,#444,#151515 42%,#080808 70%);position:relative}
+    .portrait-inner:after{content:"JOYCE";position:absolute;bottom:35px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:.5em;color:#aaa}
+    section{padding:100px 0;border-top:1px solid var(--line)}
+    .section-title{font-size:44px;letter-spacing:-.04em;margin-bottom:14px}
+    .section-sub{color:var(--muted);max-width:650px;margin-bottom:42px}
+    .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+    .bigquote{font-size:28px;font-weight:700;line-height:1.25}
+    .bio{color:#bbb;font-size:16px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;min-height:190px}
+    .num{font-size:12px;color:#777;letter-spacing:.15em}
+    .card h3{margin:28px 0 8px;font-size:22px}
+    .card p{color:#999;font-size:14px}
+    .socials{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .social{padding:24px;border:1px solid var(--line);border-radius:18px;background:#0c0c0c}
+    .social strong{display:block;margin-bottom:4px}
+    .social span{font-size:13px;color:#888}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+    form{display:grid;gap:12px}
+    input,textarea{width:100%;background:#0b0b0b;border:1px solid #2b2b2b;border-radius:13px;padding:15px;color:#fff;font:inherit}
+    textarea{min-height:140px;resize:vertical}
+    footer{padding:35px 0;color:#777;font-size:12px;border-top:1px solid var(--line)}
+    @media(max-width:800px){
+      .navlinks{display:none}.hero-grid,.about,.contact{grid-template-columns:1fr}.portrait{height:430px}
+      .cards{grid-template-columns:1fr}.socials{grid-template-columns:1fr 1fr}
+      section{padding:75px 0}.hero p{font-size:16px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#accueil">JOYCE</a>
+      <div class="navlinks">
+        <a href="#apropos">À propos</a><a href="#univers">Univers</a><a href="#reseaux">Réseaux</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Site officiel · Balandila Joyce Gyresse</div>
+      <h1>JOYCE</h1>
+      <p>Créateur de contenu · Réalisateur · Vidéaste · Artiste numérique · Slameur</p>
+      <p>Un univers entre création, image, émotion et expression. Découvrez mon parcours, mes projets et mon travail.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#apropos">Découvrir</a>
+        <a class="btn" href="#contact">Me contacter</a>
+      </div>
+    </div>
+    <div class="portrait" aria-label="Espace réservé pour une photo professionnelle de Joyce">
+      <div class="portrait-inner"></div>
+    </div>
+  </div>
+</section>
+
+<section id="apropos">
+  <div class="wrap">
+    <div class="eyebrow">01 · À propos</div>
+    <div class="about">
+      <div class="bigquote">« Créer une identité, raconter une histoire, transmettre une émotion. »</div>
+      <div class="bio">
+        <h2 class="section-title">Joyce Balandila</h2>
+        <p><strong>BALANDILA Joyce Gyresse</strong>, connu publiquement sous le nom de <strong>Joyce Balandila</strong>, est un créateur de contenu, réalisateur, vidéaste, artiste numérique et slameur originaire de la République du Congo.</p><br>
+        <p>Actif sur les réseaux sociaux depuis 2019, Joyce développe une identité créative à travers différents univers : création de contenu, réalisation audiovisuelle, clips, vidéo, slam, textes, messages de motivation et contenus visuels.</p><br>
+        <p>Son travail s’intéresse notamment aux émotions, aux relations humaines, à l’amour, à la motivation, à la confiance en soi, à la famille et aux expériences de la vie. À travers ses créations, il cherche à raconter des histoires, transmettre des émotions et proposer des contenus auxquels son public peut s’identifier.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:70px" class="about">
+      <div>
+        <div class="eyebrow">Réalisation & audiovisuel</div>
+        <h2 class="section-title">L’image comme langage.</h2>
+      </div>
+      <div class="bio">
+        <p>Joyce évolue également dans le domaine de la réalisation audiovisuelle et de la vidéo. Il réalise et développe des projets visuels, notamment des clips et différents contenus audiovisuels, en travaillant sur l’image, la mise en scène, l’univers visuel et la manière de raconter une histoire à travers la vidéo.</p><br>
+        <p>Son activité de vidéaste et de réalisateur s’inscrit dans une démarche de création globale, où l’image, le son, le récit et l’identité visuelle participent ensemble à la réalisation d’un projet.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:70px" class="about">
+      <div>
+        <div class="eyebrow">Création de contenu</div>
+        <h2 class="section-title">Un univers numérique.</h2>
+      </div>
+      <div class="bio">
+        <p>Joyce est particulièrement présent sur TikTok, où il développe sa communauté et partage des contenus sous son identité publique Joyce Balandila.</p><br>
+        <p>Son univers numérique combine notamment motivation, relations, amour, émotions, famille, réflexion et expression personnelle, à travers des textes, des créations visuelles, de l’audio, du slam et des vidéos.</p><br>
+        <p>Il utilise le même identifiant sur ses différentes plateformes afin de construire une identité numérique cohérente et facilement identifiable.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:70px" class="about">
+      <div>
+        <div class="eyebrow">Digital & entrepreneuriat</div>
+        <h2 class="section-title">Construire ses propres projets.</h2>
+      </div>
+      <div class="bio">
+        <p>En parallèle de ses activités artistiques et audiovisuelles, Joyce s’intéresse à l’informatique, au numérique, à la mode, à l’image et à l’entrepreneuriat.</p><br>
+        <p>Il souhaite développer ses propres projets et construire progressivement une activité indépendante autour de la création, du digital, de l’audiovisuel et de sa marque personnelle.</p><br>
+        <p>Son ambition est de faire évoluer son travail au-delà des réseaux sociaux en développant des projets audiovisuels, créatifs et entrepreneuriaux et en construisant une identité professionnelle reconnaissable.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:70px" class="about">
+      <div>
+        <div class="eyebrow">Formation</div>
+        <h2 class="section-title">Études</h2>
+      </div>
+      <div class="bio">
+        <p><strong>Université Denis Sassou Nguesso</strong></p>
+        <p>Joyce y a étudié dans le cadre de son parcours universitaire.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:70px" class="about">
+      <div>
+        <div class="eyebrow">Identité publique</div>
+        <h2 class="section-title">Profil</h2>
+      </div>
+      <div class="bio">
+        <p><strong>Nom complet :</strong> BALANDILA Joyce Gyresse</p>
+        <p><strong>Nom public :</strong> Joyce Balandila</p>
+        <p><strong>Activités :</strong> Créateur de contenu · Réalisateur · Vidéaste · Artiste numérique · Slameur</p>
+        <p><strong>Pays :</strong> République du Congo</p>
+        <p><strong>Présence sur les réseaux sociaux :</strong> depuis 2019</p>
+        <p><strong>Plateforme principale :</strong> TikTok</p>
+        <p><strong>Identifiant :</strong> @joycebalandila</p>
+        <p><strong>X (Twitter) :</strong> @joycebalandila</p>
+        <p><strong>Snapchat :</strong> @joycebalandila</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="univers">
+  <div class="wrap">
+    <div class="eyebrow">02 · Domaines d’activité</div>
+    <h2 class="section-title">Mon univers.</h2>
+    <p class="section-sub">Créativité, image, expression, numérique et développement de projets.</p>
+    <div class="cards">
+      <article class="card"><div class="num">01 · 🎬</div><h3>Réalisation audiovisuelle</h3><p>Clips, vidéos et projets visuels, avec un travail sur l’image, la mise en scène et le récit.</p></article>
+      <article class="card"><div class="num">02 · 📹</div><h3>Vidéographie</h3><p>Création et production de contenus vidéo adaptés à différents univers et formats.</p></article>
+      <article class="card"><div class="num">03 · 📱</div><h3>Création de contenu</h3><p>Contenus numériques, réseaux sociaux, textes, messages et créations visuelles.</p></article>
+      <article class="card"><div class="num">04 · 🎙️</div><h3>Slam & expression</h3><p>Textes, voix et messages autour des émotions, de la vie, des relations et de la motivation.</p></article>
+      <article class="card"><div class="num">05 · 💻</div><h3>Digital & informatique</h3><p>Intérêt pour l’informatique, les outils numériques et les nouveaux univers de création.</p></article>
+      <article class="card"><div class="num">06 · 👕</div><h3>Mode & image</h3><p>Construction d’une identité visuelle personnelle et travail autour de l’image.</p></article>
+      <article class="card"><div class="num">07 · 🚀</div><h3>Entrepreneuriat</h3><p>Développement de projets indépendants et construction progressive d’une marque personnelle.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="reseaux">
+  <div class="wrap">
+    <div class="eyebrow">03 · Réseaux</div>
+    <h2 class="section-title">Retrouver Joyce</h2>
+    <p class="section-sub">Les liens ci-dessous sont des emplacements à remplacer par tes URL officielles.</p>
+    <div class="socials">
+      <a class="social" href="https://www.tiktok.com/@joycebalandila" target="_blank" rel="noopener"><strong>TikTok</strong><span>@joycebalandila</span></a>
+      <a class="social" href="#" onclick="return false"><strong>Instagram</strong><span>Ajouter le compte</span></a>
+      <a class="social" href="#" onclick="return false"><strong>YouTube</strong><span>Ajouter la chaîne</span></a>
+      <a class="social" href="#" onclick="return false"><strong>Facebook</strong><span>Ajouter la page</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <div class="eyebrow">04 · Contact</div>
+      <h2 class="section-title">Parlons d’un projet.</h2>
+      <p class="section-sub">Collaboration, réalisation, création de contenu ou demande professionnelle.</p>
+    </div>
+    <form onsubmit="event.preventDefault(); alert('Merci ! Configure ton adresse e-mail dans le code pour recevoir les messages.');">
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="E-mail" required>
+      <textarea placeholder="Votre message" required></textarea>
+      <button class="btn primary" type="submit">Envoyer</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Joyce · Balandila Joyce Gyresse · Site personnel officiel</div>
+</footer>
+</body>
+</html>
