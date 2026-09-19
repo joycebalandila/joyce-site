@@ -205,10 +205,11 @@
       <h2 class="section-title">Parlons d’un projet.</h2>
       <p class="section-sub">Collaboration, réalisation, création de contenu ou demande professionnelle.</p>
     </div>
-    <form onsubmit="event.preventDefault(); alert('Merci ! Configure ton adresse e-mail dans le code pour recevoir les messages.');">
-      <input type="text" placeholder="Nom" required>
-      <input type="email" placeholder="E-mail" required>
-      <textarea placeholder="Votre message" required></textarea>
+
+    <form action="mailto:lucarnesjoyce@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Nom" placeholder="Nom" required>
+      <input type="email" name="Email" placeholder="E-mail" required>
+      <textarea name="Message" placeholder="Votre message" required></textarea>
       <button class="btn primary" type="submit">Envoyer</button>
     </form>
   </div>
